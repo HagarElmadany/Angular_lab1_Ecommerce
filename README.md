@@ -1,4 +1,6 @@
 ## simple product and category display page using Angular
+## 
+![Product Card Screenshot](./assets/images/lab.png)
 
 ### Products
 
@@ -8,7 +10,7 @@ This screenshot shows navbar and how the product cards appear on the page, with 
 
 ### Categories
 
-![Category Card Screenshot](./assets/images/11.png)
+![Category Card Screenshot](./assets/images/12.png)
 
 This screenshot shows footer and how the category cards are displayed. Each card contains an image of the category and the price associated with it.
 
