@@ -1,9 +1,14 @@
 <h1>Our Products</h1>
 <div class="products">
-    <div *ngFor="let product of products" class="product-card">
-    <img [src]="product.image" alt="{{product.productName}}" />
-    <h2>{{product.productName}}</h2>
-    <p>Price: {{product.productPrice}}$</p>
-    <span *ngIf="product.onSale">On Sale</span>
+    @for (product of products; track $index) {
+        <div class="product-card">
+          <img [src]="product.image" alt="{{ product.productName }}" />
+          <h2>{{ product.productName }}</h2>
+          <p>Price: {{ product.productPrice }}$</p>
+  
+          @if (product.onSale) {
+            <span>On Sale</span>
+          }
     </div>
+}
 </div>
