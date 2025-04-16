@@ -13,7 +13,8 @@ export interface Category {
   styleUrl: './category.component.css'
 })
 export class CategoryComponent {
-  @Input() categories: Category[] = [];
+  // @Input() categories: Category[] = [];
+  @Input() categories!: Category[];
 }
 
 
