@@ -4,7 +4,7 @@
     background-color: #f0f4f8;
   }
   
-  .products {
+  .products,.top-products {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -28,6 +28,7 @@
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
+    box-shadow: 0 0 10px  #2c3e50, 0 2px 5px  #2c3e50;
   }
   
   .product-card img {
@@ -40,6 +41,7 @@
   .product-card h2 {
     font-size: 1.2rem;
     color: white;
+    text-align: center;
    
   }
   
@@ -49,12 +51,5 @@
     color: white;
   }
   
-span {
-    background-color: #e74c3c;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+
   

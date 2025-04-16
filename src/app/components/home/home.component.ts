@@ -16,7 +16,7 @@ export class HomeComponent {
     products: Product[] = [];
   
     constructor(private productService: ProductService) {
-      this.products = this.productService.getProducts();    // get data from the service
+      this.products = this.productService.getAllProducts();    // get data from the service
     }
   
 // to display the categories in the home component

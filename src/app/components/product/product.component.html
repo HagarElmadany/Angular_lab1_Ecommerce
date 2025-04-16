@@ -1,14 +1,41 @@
-<h1>Our Products</h1>
-<div class="products">
-    @for (product of products; track $index) {
-        <div class="product-card">
-          <img [src]="product.image" alt="{{ product.productName }}" />
-          <h2>{{ product.productName }}</h2>
-          <p>Price: {{ product.productPrice }}$</p>
+<h1>Top Category: {{ topCategory }}</h1>
+<div class="top-products">
+    @for (product of filteredProducts; track $index) {
+      <div class="product-card">
+        <img [src]="product.image" alt="{{ product.title }}" />
+        <h2>{{ product.title }}</h2>
+        <p>Price: {{ product.price }}$</p>
+      </div>
+    }
+  </div>
   
-          @if (product.onSale) {
-            <span>On Sale</span>
-          }
+  <hr />
+
+<h1>Our Products</h1>
+<!-- <div class="products">
+  @for (product of products; track $index) {
+    <div class="product-card">
+      <img [src]="product.image" alt="{{ product.title }}" />
+      <h2>{{ product.title }}</h2>
+      <p>Category: {{ product.category }}</p>
+      <p>Price: {{ product.price }}$</p>
     </div>
-}
-</div>
+  }
+</div> -->
+
+<!-- to loading all products -->
+@defer (on viewport) {
+    <div class="products">
+        @for (product of products; track $index) {
+          <div class="product-card">
+            <img [src]="product.image" alt="{{ product.title }}" />
+            <h2>{{ product.title }}</h2>
+            <p>Category: {{ product.category }}</p>
+            <p>Price: {{ product.price }}$</p>
+          </div>
+        }
+      </div>
+  } @placeholder {
+    <div>⏳ loading...</div>
+  }
+  

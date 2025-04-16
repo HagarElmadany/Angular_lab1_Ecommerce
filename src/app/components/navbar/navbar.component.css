@@ -25,10 +25,19 @@ nav {
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
+    padding: 10px;
   }
   
   nav ul li a:hover {
-    color: #f1c40f;
+    color: hsl(48, 89%, 50%);
+  }
+  
+  
+  .active {
+    font-weight: bold;
+    background-color:  hsl(48, 89%, 50%);
+    border-radius: 20px;
+    
   }
   
   
